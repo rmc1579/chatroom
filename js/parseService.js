@@ -22,7 +22,7 @@ app.service('parseService', function($http){
       method: 'POST',
       url: 'https://api.parse.com/1/classes/chat',
       data: {
-        message: messageInput
+        text: messageInput
       }  
     });
 

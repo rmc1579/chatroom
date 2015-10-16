@@ -14,7 +14,15 @@ app.controller('mainCtrl', ['$scope', 'parseService', function($scope, parseServ
 
   $scope.getData = function(){
     parseService.getData().then(function(response){
-      $scope.messages = response.data.data;
+        $scope.messages = response.data.results;
+        //$scope.dateCreated = response.data.results[0].createdAt;
+        /*$scope.newMessage = {
+            text: $scope.messages,
+            date: $scope.dateCreated
+        }*/
+         
+        //$scope.messages + $scope.dateCreated;
+        //console.log($scope.dateCreated);
     });
   };
 

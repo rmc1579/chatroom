@@ -13,7 +13,7 @@
       </form>
       <div class="">
           <div class="clear">&nbsp;</div>
-        <div ng-repeat="message in messages">
+        <div ng-repeat="message in messages" ng-show="message.text">
         
           <div class="col-md-6">
                 <p class="message">{{message.text}}</p>
